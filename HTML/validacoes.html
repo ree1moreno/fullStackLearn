@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Validações</title>
+</head>
+
+<body>
+  <h1>Encontre no Google</h1>
+  <form action="https://www.google.com/search" method="get" target="_blank">
+    <label for="q">O que deseja pesquisar?</label>
+    <input type="text" id="q" name="q" placeholder="Nasa, SpaceX" required autocomplete="off">
+    <input type="submit" value="Pesquisar">
+  </form>
+
+  <hr>
+
+  <form>
+    <label for="nome">Nome:</label>
+    <input type="text" name="" id="nome">
+    <label for="email">Email:</label>
+    <input type="email" name="" id="email" required>
+    <label for="idade">Idade:</label>
+    <input type="number" name="" id="idade" min="5" max="11">
+    <input type="submit" value="Pesquisar">
+  </form>
+
+  <hr>
+
+  <form action="">
+    <label for="list">Navegador:</label>
+    <input type="search" list="browsers" id="list" />
+    <datalist id="browsers">
+      <option value="Chrome">
+      <option value="Firefox">
+      <option value="Internet Explorer">
+      <option value="Opera">
+      <option value="Safari">
+    </datalist>
+  </form>
+
+</body>
+
+</html>
