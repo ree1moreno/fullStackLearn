@@ -1,0 +1,18 @@
+h1 {
+  border: 2px solid black;
+  font-family: cursive;
+  /* margin-bottom: 200px;
+  margin-left: 28px;
+  margin-top: 45px; */
+  margin: 45px auto 200px;
+  padding: 10px 20px 20px 35px;
+  text-decoration: underline;
+  width: 15%;
+}
+
+p {
+  font-family: Arial, sans-serif;
+  font-size: 30px;
+  /* font-weight: 700; */
+  line-height: 1.5;
+}

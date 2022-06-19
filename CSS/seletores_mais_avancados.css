@@ -1,0 +1,25 @@
+/* * {
+  border: 2px solid
+} */
+
+li a {
+  color: red;
+}
+
+li > a {
+  color: green;
+}
+
+h1 + h3 {
+  border: 4px dashed;
+}
+
+a[href='/recibo'] {
+  color: purple;
+}
+
+li:nth-of-type(2) {
+  color: orange;
+}
+
+/* https://code.tutsplus.com/pt/tutorials/the-30-css-selectors-you-must-memorize--net-16048 */

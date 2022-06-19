@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header,
+.footer {
+  align-items: center;
+  background-color: #292929;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 15px;
+  justify-content: space-between;
+  min-height: 40px;
+  padding: 20px;
+  width: 100%;
+}
+
+.logo-onebitcode {
+  width: 180px;
+}
+
+.navbar {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-button {
+  background-color: transparent;
+  border: 2px solid transparent;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 6px;
+  transition: 0.4s;
+}
+
+.nav-button:hover {
+  border-bottom: 2px solid black;
+}
+
+.section-title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 26px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.section-description {
+  color: #383838;
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  flex: 1 0 auto;
+  grid-template-areas: 'main sidebar';
+  grid-template-columns: 3fr 1fr;
+  padding: 20px;
+}
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  grid-area: main;
+  justify-content: center;
+}
+
+.card {
+  border: 2px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  height: 380px;
+  transition: 0.5s;
+  width: 280px;
+}
+
+.card:hover {
+  border-color: black;
+}
+
+.card-image,
+.extra-card-image {
+  border-radius: 10px 10px 0 0;
+  height: 180px;
+  width: 100%;
+}
+
+.card-title {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 6px;
+}
+
+.card-description {
+  padding: 6px;
+}
+
+.extra-content {
+  align-items: center;
+  background-color: #383838;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  grid-area: sidebar;
+  padding: 16px;
+}
+
+.extra-card {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+  width: 75%;
+}
+
+.extra-card:hover {
+  border-color: gainsboro;
+}
+
+.extra-card-title {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 630px) {
+  .grid-container {
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    grid-template-areas:
+      'main'
+      'sidebar';
+  }
+
+  .extra-content {
+    min-width: auto;
+  }
+
+  .footer-link {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 463px) {
+  .header,
+  .footer {
+    justify-content: center;
+  }
+}

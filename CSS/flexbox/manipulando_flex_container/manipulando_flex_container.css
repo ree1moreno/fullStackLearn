@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  align-items: center;
+  background-color: darkgray;
+  /* column-gap: 10px; */
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  gap: 10px 15px;
+  justify-content: center;
+  min-height: 100vh;
+  /* row-gap: 15px; */
+}
+
+.item {
+  align-items: center;
+  background-color: white;
+  border: 2px solid black;
+  display: flex;
+  font-size: 20px;
+  height: 200px;
+  justify-content: center;
+  width: 200px;
+}
