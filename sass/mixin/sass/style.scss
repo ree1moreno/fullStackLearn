@@ -1,0 +1,23 @@
+@mixin text-style($color, $font-size, $font-family) {
+  color: $color;
+  font-family: $font-family;
+  font-size: $font-size;
+}
+
+$primary-color: #ff4043;
+
+.texts {
+  h1 {
+    // color: #ff4043;
+    // font-family: Arial, Helvetica, sans-serif;
+    // font-size: 34px;
+    @include text-style($primary-color, 34px, Arial);
+  }
+
+  p {
+    // color: blue;
+    // font-family: sans-serif;
+    // font-size: 22px;
+    @include text-style(blue, 22px, sans-serif);
+  }
+}

@@ -1,0 +1,20 @@
+#title-home {
+  font-family: sans-serif;
+  font-size: 44px;
+}
+
+.btn {
+  background-color: $btn-background;
+  color: white;
+  cursor: pointer;
+  display: block;
+  margin-top: 10px;
+  padding: 10px 0;
+  width: 95px;
+}
+
+@mixin text-style($color, $font-size, $font-family) {
+  color: $color;
+  font-size: $font-size;
+  font-family: $font-family;
+}
