@@ -1,0 +1,49 @@
+.container00 {
+  &.container01 {
+    background-image: url("~/../../images/home/01.jpg");
+  }
+  &.container02 {
+    background-image: url("~/../../images/home/03.jpg");
+  }
+  &.container03 {
+    background-image: url("~/../../images/home/02.gif");
+  }
+  &.container04 {
+    background-image: url("~/../../images/home/04.jpg");
+  }
+}
+
+.titlePadding {
+  padding-top: 200px;
+}
+
+.shortTitle {
+  margin-bottom: -25px;
+  width: 550px;
+}
+
+.mediumTitle {
+  margin-bottom: -25px;
+  width: 650px;
+}
+
+// Media query
+
+@media (max-width: 750px) {
+  .titlePadding {
+    padding-top: 120px;
+  }
+
+  .shortTitle,
+  .mediumTitle {
+    font-size: 50px;
+    width: auto;
+  }
+}
+
+@media (max-width: 380px) {
+  .shortTitle,
+  .mediumTitle {
+    font-size: 40px;
+  }
+}
