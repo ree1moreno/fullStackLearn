@@ -55,6 +55,11 @@
   color: #555252;
 }
 
+@media (max-width: 449px) {
+  .downloadDesc button {
+    margin: 10px 0;
+  }
+}
 @media (max-width: 405px) {
   .logoPc {
     margin-top: 15px;
@@ -110,6 +115,137 @@
   .shortTitle,
 .mediumTitle {
     font-size: 40px;
+  }
+}
+.container00.container05 {
+  background-image: url("~/../../images/falcon9/01.jpg");
+}
+.container00.container06 {
+  background-image: url("~/../../images/falcon9/02.jpg");
+}
+.container00.carrossel01 {
+  background-image: url("~/../../images/falcon9/03.jpg");
+}
+.container00.carrossel02 {
+  background-image: url("~/../../images/falcon9/04.jpg");
+}
+.container00.carrossel03 {
+  background-image: url("~/../../images/falcon9/05.jpg");
+}
+.container00.carrossel04 {
+  background-image: url("~/../../images/falcon9/06.jpg");
+}
+.container00.carrossel05 {
+  background-image: url("~/../../images/falcon9/07.jpg");
+}
+.container00.container07 {
+  background-image: url("~/../../images/falcon9/08.jpg");
+}
+
+.titleFalcon9 {
+  font-family: "Rubik", sans-serif;
+  font-size: 90px;
+  font-weight: 514;
+}
+
+.titleContent {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  justify-content: center;
+}
+
+.numbers {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 40vh;
+}
+.numbers .titleNumb {
+  font-size: 90px;
+}
+.numbers .subTitleNumb {
+  font-size: 20px;
+}
+
+.falcon9Desc {
+  font-size: 22px;
+  line-height: 50px;
+  width: 640px;
+}
+
+.containerFalcon9Desc {
+  align-items: center;
+  display: grid;
+  justify-content: left;
+  height: 90vh;
+}
+
+#overViewPosition {
+  margin-left: 13%;
+  padding-top: 15%;
+  width: 500px;
+}
+
+.carrosselSlide img {
+  height: 100vh;
+}
+
+.carousselText {
+  background-color: black;
+}
+
+.downloadDesc {
+  background-color: black;
+  height: 85vh;
+  padding-top: 240px;
+}
+.downloadDesc a {
+  color: #555252;
+  text-decoration: none;
+}
+.downloadDesc a:hover {
+  color: #b9b9b9;
+}
+.downloadDesc button {
+  border: 2px solid white;
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .numbers .titleNumb {
+    font-size: 80px;
+  }
+  .numbers .subTitleNumb {
+    font-size: 18px;
+  }
+  .falcon9Desc {
+    width: auto;
+  }
+  #overViewPosition {
+    padding-top: 35%;
+  }
+}
+@media (max-width: 575px) {
+  .numbers {
+    height: 75vh;
+  }
+  #overViewPosition {
+    margin-left: auto;
+    width: auto;
+  }
+}
+@media (max-width: 375px) {
+  .titleFalcon9 {
+    font-size: 50px;
+  }
+  .falcon9Desc {
+    font-size: 18px;
+    line-height: auto;
+  }
+  .subTitleFalcon {
+    font-size: 16px;
   }
 }
 
