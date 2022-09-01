@@ -1,10 +1,11 @@
-import HelloWorld from "./Hello";
-// import { HelloWorld } from "./Hello";
+import HelloWorld from "./Components/Hello";
+import LoremIpsum from "./Components/LoremIpsum";
 
 function App() {
   return (
     <div>
       <HelloWorld />
+      <LoremIpsum />
     </div>
   );
 }
