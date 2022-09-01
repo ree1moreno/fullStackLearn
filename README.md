@@ -10,6 +10,8 @@ Repositório criado para armazenar os conteúdos desenvolvidos durante o acompan
 - [Bulma](Bulma/)
 - [sass](sass/)
 - [Bootstrap](Bootstrap/)
+- [React](React/)
+- [nodeJs](nodeJs/)
 
 <br>
 <hr>
