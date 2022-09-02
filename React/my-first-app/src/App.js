@@ -1,12 +1,10 @@
-import HelloWorld from "./Components/Hello";
-import LoremIpsum from "./Components/LoremIpsum";
+import Planets from "./Components/planets";
 
 function App() {
   return (
-    <div>
-      <HelloWorld />
-      <LoremIpsum />
-    </div>
+    <>
+      <Planets />
+    </>
   );
 }
 
