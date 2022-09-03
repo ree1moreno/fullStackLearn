@@ -1,32 +1,44 @@
+import { Component } from "react";
 import GrayImg from "../../shared/gray_img";
 
-const Planet = (props) => {
-  const names = ["A", "B", "C", "D"];
-  // const satellites = names.map((n, i) => <li key={i}>Satélite {n}</li>);
+async function getSattelites(id) {
+  let response = await fetch(`http://localhost:3000/api/${id}.json`);
+  let data = await response.json();
+  return data;
+}
 
-  if (!props.description)
+class Planet extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      satellites: [],
+    };
+  }
+
+  componentDidMount() {
+    getSattelites(this.props.id).then((data) => {
+      this.setState((state) => ({
+        satellites: data["satellites"],
+      }));
+    });
+  }
+
+  render() {
     return (
-      <div onClick={() => props.clickOnPlanet(props.name)}>
-        <h4>{props.name}</h4>
-        <GrayImg img_url={props.img_url} />
+      <div onClick={() => this.props.clickOnPlanet(this.props.name)}>
+        <h4>{this.props.name}</h4>
+        <p>{this.props.description}</p>
+        <GrayImg img_url={this.props.img_url} />
+        <h3>Satélites</h3>
+        <ul>
+          {this.state.satellites.map((satellite, i) => (
+            <li key={i}>Satélite {satellite.name}</li>
+          ))}
+        </ul>
+        <hr />
       </div>
     );
-
-  return (
-    <div onClick={() => props.clickOnPlanet(props.name)}>
-      <h4>{props.name}</h4>
-      <p>{props.description}</p>
-      <GrayImg img_url={props.img_url} />
-      <h3>Satélites</h3>
-      {/* <ul>{satellites}</ul> */}
-      <ul>
-        {names.map((n, i) => (
-          <li key={i}>Satélite {n}</li>
-        ))}
-      </ul>
-      <hr />
-    </div>
-  );
-};
+  }
+}
 
 export default Planet;
