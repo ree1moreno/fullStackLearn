@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import PlanetScreen from "./screens/Planet";
 import PlanetsScreen from "./screens/Planets";
 
 const PagesRoutes = () => {
@@ -6,6 +7,7 @@ const PagesRoutes = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<PlanetsScreen />} />
+        <Route path="/planet/:id" element={<PlanetScreen />} />
       </Routes>
     </BrowserRouter>
   );
