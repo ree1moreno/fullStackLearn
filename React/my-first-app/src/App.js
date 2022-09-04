@@ -1,9 +1,9 @@
-import Planets from "./Components/planets";
+import PagesRoutes from "./Routes";
 
 function App() {
   return (
     <>
-      <Planets />
+      <PagesRoutes />
     </>
   );
 }
