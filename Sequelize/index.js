@@ -7,7 +7,6 @@
     position: 5,
   });
 
-
   // const seePlanets = await Planet.findAll();
   // const seePlanets = await Planet.findByPk(2);
   const seePlanets = await Planet.findAll({
@@ -15,10 +14,14 @@
       name: "Terra",
     },
   });
-  */
+
   const updatePlanets = await Planet.findByPk(2);
   updatePlanets.position = 2;
   await updatePlanets.save();
+  */
 
-  console.log(updatePlanets);
+  const deletePlanets = await Planet.findByPk(3);
+  await deletePlanets.destroy();
+
+  console.log(deletePlanets);
 })();
