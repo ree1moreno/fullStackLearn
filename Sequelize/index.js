@@ -6,7 +6,7 @@
     name: "Vênus",
     position: 5,
   });
-  */
+
 
   // const seePlanets = await Planet.findAll();
   // const seePlanets = await Planet.findByPk(2);
@@ -15,6 +15,10 @@
       name: "Terra",
     },
   });
+  */
+  const updatePlanets = await Planet.findByPk(2);
+  updatePlanets.position = 2;
+  await updatePlanets.save();
 
-  console.log(seePlanets);
+  console.log(updatePlanets);
 })();
