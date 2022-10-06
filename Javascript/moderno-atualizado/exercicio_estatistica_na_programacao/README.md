@@ -1,4 +1,4 @@
-# 13 - Exercício 14 - Estatística na Programação
+# Exercício - Estatística na Programação
 
 De acordo com os conhecimentos aprendidos nesse módulo sobre recursos do javascript moderno, crie quatro funções que aceitem qualquer quantidade de parâmetros e utilizando a sintaxe de _arrow functions_ para calcular as operações abaixo.
 
