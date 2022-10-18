@@ -12,6 +12,7 @@ async function loadSentryObjects() {
       sentry["year_range_max"],
     );
     sentryObjects.push(newSentry);
+    sentryObjects.sort((a, b) => a.yearMin - b.yearMin);
   });
   renderSentryObjects(sentryObjects);
 }
