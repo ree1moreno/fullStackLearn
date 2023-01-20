@@ -1,0 +1,15 @@
+{
+  "name": "exercicio_final_consumindo_api",
+  "version": "1.0.0",
+  "description": "### Finanças Pessoais",
+  "main": "index.js",
+  "scripts": {
+    "serve": "json-server --watch db.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.17.1"
+  }
+}
